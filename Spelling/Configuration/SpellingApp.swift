@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SpellingApp: App {
+    @StateObject private var viewModel = WordsViewModel()
+    @StateObject private var speakModel = SpeakModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: viewModel, speakModel: speakModel)
         }
     }
 }

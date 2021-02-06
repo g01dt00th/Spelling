@@ -7,14 +7,26 @@
 
 import SwiftUI
 
-struct WordsViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+final class WordsViewModel: ObservableObject {
+    @Published var userName: String = "" {
+        willSet {
+            UserDefaults.standard.setValue(newValue, forKey: "userName")
+        }
     }
-}
-
-struct WordsViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        WordsViewModel()
+    
+    @Published var rightWordsCount = 0 {
+        willSet {
+            UserDefaults.standard.setValue(newValue, forKey: "rightWordsCount")
+        }
+    }
+    
+    init() {
+        if let userName = UserDefaults.standard.value(forKey: "userName") as? String {
+            self.userName = userName
+        }
+        
+        if let count = UserDefaults.standard.value(forKey: "rightWordsCount") as? Int {
+            self.rightWordsCount = count
+        }
     }
 }

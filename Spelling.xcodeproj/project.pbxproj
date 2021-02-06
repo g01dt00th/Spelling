@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B41414AC25CF2564006B8E31 /* WordsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41414AB25CF2564006B8E31 /* WordsListView.swift */; };
+		B41701DC25C9F54700541A64 /* WordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41701DB25C9F54700541A64 /* WordsView.swift */; };
 		B45C31BE25C897EC003F6729 /* SpellingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C31BD25C897EC003F6729 /* SpellingApp.swift */; };
 		B45C31C025C897EC003F6729 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C31BF25C897EC003F6729 /* ContentView.swift */; };
 		B45C31C225C897EE003F6729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45C31C125C897EE003F6729 /* Assets.xcassets */; };
 		B45C31C525C897EE003F6729 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45C31C425C897EE003F6729 /* Preview Assets.xcassets */; };
+		B45C31CF25C89826003F6729 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C31CE25C89826003F6729 /* Words.swift */; };
+		B45C31D825C8A4E3003F6729 /* WordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C31D725C8A4E3003F6729 /* WordsModel.swift */; };
+		B45C31DB25C8A752003F6729 /* SpeakModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C31DA25C8A752003F6729 /* SpeakModel.swift */; };
+		B45C31DE25C8AEE2003F6729 /* WordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C31DD25C8AEE2003F6729 /* WordsViewModel.swift */; };
+		B45C31E125C8B426003F6729 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C31E025C8B426003F6729 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B41414AB25CF2564006B8E31 /* WordsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListView.swift; sourceTree = "<group>"; };
+		B41701DB25C9F54700541A64 /* WordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsView.swift; sourceTree = "<group>"; };
 		B45C31BA25C897EC003F6729 /* Spelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45C31BD25C897EC003F6729 /* SpellingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingApp.swift; sourceTree = "<group>"; };
 		B45C31BF25C897EC003F6729 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B45C31C125C897EE003F6729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B45C31C425C897EE003F6729 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B45C31C625C897EE003F6729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45C31CE25C89826003F6729 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		B45C31D725C8A4E3003F6729 /* WordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
+		B45C31DA25C8A752003F6729 /* SpeakModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakModel.swift; sourceTree = "<group>"; };
+		B45C31DD25C8AEE2003F6729 /* WordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewModel.swift; sourceTree = "<group>"; };
+		B45C31E025C8B426003F6729 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,12 @@
 		B45C31BC25C897EC003F6729 /* Spelling */ = {
 			isa = PBXGroup;
 			children = (
-				B45C31BD25C897EC003F6729 /* SpellingApp.swift */,
-				B45C31BF25C897EC003F6729 /* ContentView.swift */,
+				B45C31D625C8A4B7003F6729 /* Resources */,
+				B45C31D525C8A4A4003F6729 /* Configuration */,
+				B45C31D425C8A485003F6729 /* View */,
+				B45C31D325C8A47D003F6729 /* ViewModel */,
+				B45C31D225C8A471003F6729 /* Model */,
+				B45C31CD25C8980E003F6729 /* Helpers */,
 				B45C31C125C897EE003F6729 /* Assets.xcassets */,
 				B45C31C625C897EE003F6729 /* Info.plist */,
 				B45C31C325C897EE003F6729 /* Preview Content */,
@@ -67,6 +85,57 @@
 				B45C31C425C897EE003F6729 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B45C31CD25C8980E003F6729 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B45C31CE25C89826003F6729 /* Words.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B45C31D225C8A471003F6729 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B45C31D725C8A4E3003F6729 /* WordsModel.swift */,
+				B45C31DA25C8A752003F6729 /* SpeakModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B45C31D325C8A47D003F6729 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B45C31DD25C8AEE2003F6729 /* WordsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B45C31D425C8A485003F6729 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B45C31BF25C897EC003F6729 /* ContentView.swift */,
+				B45C31E025C8B426003F6729 /* OnboardingView.swift */,
+				B41701DB25C9F54700541A64 /* WordsView.swift */,
+				B41414AB25CF2564006B8E31 /* WordsListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B45C31D525C8A4A4003F6729 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B45C31BD25C897EC003F6729 /* SpellingApp.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B45C31D625C8A4B7003F6729 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45C31DE25C8AEE2003F6729 /* WordsViewModel.swift in Sources */,
+				B45C31CF25C89826003F6729 /* Words.swift in Sources */,
 				B45C31C025C897EC003F6729 /* ContentView.swift in Sources */,
 				B45C31BE25C897EC003F6729 /* SpellingApp.swift in Sources */,
+				B41701DC25C9F54700541A64 /* WordsView.swift in Sources */,
+				B41414AC25CF2564006B8E31 /* WordsListView.swift in Sources */,
+				B45C31DB25C8A752003F6729 /* SpeakModel.swift in Sources */,
+				B45C31D825C8A4E3003F6729 /* WordsModel.swift in Sources */,
+				B45C31E125C8B426003F6729 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.roenko.Spelling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.roenko.Spelling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
